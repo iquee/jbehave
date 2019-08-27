@@ -1,5 +1,6 @@
-Scenario: Um usuário efetuando um saque
+Account has sufficient funds
 
-Given um usuário efetuando um saque
-When ele possuir saldo na conta
-Then o saque será efetuado
+Given the customer is valid
+When the customer requests some cash
+Then ensure the account is debited
+And cash is taken out

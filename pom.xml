@@ -18,7 +18,6 @@
 	<properties>
 		<java.version>11</java.version>
 		<jbehave.version>4.1</jbehave.version>
-		<rest-assured.version>2.9.0</rest-assured.version>
 	</properties>
 
 	<dependencies>
@@ -30,6 +29,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -39,7 +42,7 @@
 		<dependency>
 			<groupId>org.jbehave</groupId>
 			<artifactId>jbehave-core</artifactId>
-			<version>${jbehave.version}</version>
+			<version>4.1</version>
 			<scope>test</scope>
 		</dependency>
 

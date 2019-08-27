@@ -1,2 +1,2 @@
-com/luizhtaira/samples/WithdrawStep.class
-com/luizhtaira/samples/JbehaveApplicationTests.class
+com/luizhtaira/samples/acceptance/AccountServicesStep.class
+com/luizhtaira/samples/acceptance/AcceptanceMapperTests.class
