@@ -1,4 +1,4 @@
-package com.luizhtaira.samples.bank.account;
+package com.luizhtaira.samples.bank;
 
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ public class AccountService {
 
     public void getCash(Integer id, BigDecimal value){
         Account account = get(id);
-        account.setTotal(account.getTotal().min(value));
+        account.setTotal(account.getTotal().subtract(value));
         customers.put(id, account);
     }
 
@@ -30,7 +30,7 @@ public class AccountService {
     }
 
     public Integer create(Account account){
-        Integer id = customers.size();
+        Integer id = customers.size() + 1;
         customers.put(id, account);
         return id;
     }

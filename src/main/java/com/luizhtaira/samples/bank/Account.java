@@ -1,4 +1,4 @@
-package com.luizhtaira.samples.bank.account;
+package com.luizhtaira.samples.bank;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
