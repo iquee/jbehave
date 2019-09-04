@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @SpringBootTest
@@ -24,8 +25,17 @@ public class JbehaveApplicationTest {
     public void account_create_created(){
         Account account = new Account("Ze", "ze@ze.com", BigDecimal.valueOf(2000L));
         Integer id = accountService.create(account);
+        assertNotNull(id);
+    }
+
+    @Test
+    public void account_create_created_get(){
+        Account account = new Account("Ze", "ze@ze.com", BigDecimal.valueOf(2000L));
+        Integer id = accountService.create(account);
         Account created = accountService.get(id);
         assertNotNull(created);
+        assertEquals("Ze", created.getName());
+        assertEquals("ze@ze.com", created.getEmail());
     }
 
 }
