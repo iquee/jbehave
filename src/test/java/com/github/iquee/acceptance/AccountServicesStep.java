@@ -1,7 +1,7 @@
-package com.luizhtaira.samples.acceptance;
+package com.github.iquee.acceptance;
 
-import com.luizhtaira.samples.bank.account.Account;
-import com.luizhtaira.samples.bank.account.AccountService;
+import com.github.iquee.bank.account.Account;
+import com.github.iquee.bank.account.AccountService;
 import org.jbehave.core.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
