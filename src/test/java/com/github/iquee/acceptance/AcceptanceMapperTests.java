@@ -1,4 +1,4 @@
-package com.luizhtaira.samples.acceptance;
+package com.github.iquee.acceptance;
 
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;

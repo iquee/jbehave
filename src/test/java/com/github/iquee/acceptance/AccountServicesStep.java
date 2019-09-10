@@ -1,17 +1,14 @@
-package com.luizhtaira.samples.acceptance;
+package com.github.iquee.acceptance;
 
-import com.luizhtaira.samples.bank.Account;
-import com.luizhtaira.samples.bank.AccountService;
+import com.github.iquee.bank.account.Account;
+import com.github.iquee.bank.account.AccountService;
 import org.jbehave.core.annotations.Alias;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.math.BigDecimal;
 
-import static org.hamcrest.EasyMock2Matchers.equalTo;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class AccountServicesStep {
